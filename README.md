@@ -1,12 +1,12 @@
-# Face Recognition Attendance System
+# Face Recognition System
 
-A real-time **face recognition attendance system** built using **Python** and computer vision techniques. The system detects faces from a webcam, identifies known individuals using a trained model, and records attendance automatically.
+A real-time **face recognition system** built using **Python** and computer vision techniques. The system detects faces from a webcam, identifies known individuals using a trained model, and records attendance automatically.
 
 ---
 
 # Overview
 
-This project implements a complete **face recognition pipeline**:
+This project implements a complete **face recognition pipeline/flow**:
 
 1. Collect face images of users
 2. Convert images into numerical face embeddings
@@ -23,13 +23,11 @@ The system converts each face into a high-dimensional feature vector and uses a 
 * Real-time face detection using webcam
 * Face recognition using deep learning embeddings
 * Machine learning classifier for identity prediction
-* Automatic attendance logging
-* Dataset creation for new users
-* Local database storage for attendance records
+* Dataset creation for new userss
 
 ---
 
-# Technologies Used
+# Technologies Used (haven't properly implemented SQLite and Streamlit but can be enhanced for future)
 
 * Python
 * OpenCV
@@ -91,7 +89,7 @@ Attendance Logging
 
 ---
 
-# Mathematical Approach
+# The math(more like logic) behind how a simple photo turns into a vector and how we recognize this photo in future
 
 ### Face Embedding
 
@@ -120,7 +118,7 @@ Prediction is made based on which side of the hyperplane the embedding lies.
 Clone the repository:
 
 ```
-git clone https://github.com/yourusername/FaceRecSystem.git
+git clone https://github.com/tomstanly1234/FaceRecSystem.git
 cd FaceRecSystem
 ```
 
@@ -190,7 +188,7 @@ The webcam will open and recognized faces will be labeled.
 
 ---
 
-# Attendance Storage
+# Attendance Storage (not implemented properly but has scope)
 
 Attendance is stored using a local SQLite database:
 
@@ -224,14 +222,8 @@ Save Attendance
 
 ---
 
-# Optional Web Interface
-
-To launch the dashboard:
-
-```
-streamlit run src/streamlit_app.py
-```
-
+# Optional Web Interface(not properly implemented)
+---
 This allows you to view attendance logs and control the system from a browser.
 
 ---
@@ -243,12 +235,12 @@ This allows you to view attendance logs and control the system from a browser.
 * Face mask detection
 * Mobile app integration
 * Improved recognition accuracy
-
+* Maybe use KNNs instead of SVMs(looks simpler but doubt the accuracy)
 ---
 
 # Author
 
-Developed as a computer vision project for automated attendance using face recognition.
+Developed as a computer vision project for automated attendance using face recognition and to implement ideas such as SVMS, vector storage.
 
 ---
 
